@@ -1,4 +1,4 @@
-function [u,v,x,T] = RunSim(dimension,q, beta, L, U0)
+function [u,v,x,T] = RunSim(dimension,q, beta, L, m,U0)
 
 %parameters in the reaction kinematics
 D_u = 0.6; D_v = 0.6;
@@ -13,7 +13,7 @@ k_1 = 0.4; k_2 = 0.6; c = 0.8;
 
 
 %Number of gridpoints per dimension
-m=100;
+%m=100;
 %L=15*sqrt(5);
 
 rng(1);
@@ -33,7 +33,7 @@ dx=L/(m-1);
 x=linspace(0,L,m);
 
 %Time interval to solve the equations on
-T=linspace(0,1e4,1e3);
+T=linspace(0,1e5,1e1);
 
 % (Sparse) Laplacian matrix
 e=ones(m,1);

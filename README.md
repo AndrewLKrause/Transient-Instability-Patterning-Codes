@@ -9,3 +9,7 @@ In the folder `pde2path continuation`, there are two folders. Both of them work 
 We focus on continuing along one spatially homogeneous equilibria.
 
 You can run the file `cmds2D.m` in order to obtain the continuation for this steady state.
+
+## VisualPDE 
+
+An implementation of the model at [VisualPDE](www.visualpde.com) can be found [at this link](https://visualpde.com/sim/?mini=F4em6M2E). The initial parameters are taken similar to those in Figure 2, where the homogeneous equilibrium is linearly asymptotically stable. A small initial perturbation will form patterns if left alone for long enough, or alternatively you can click to introduce a slightly larger perturbation to speed up the pattern-forming process. We note that, due to the use of explicit timestepping and simple finite difference methods, this simulation may become unstable if the parameters are varied beyond some thresholds without further reducing the timestep or modifying the spatial step size. See [this page](https://visualpde.com/user-guide/advanced-options.html) for details on how to modify various aspects of the simulation (including directly modifying the model).
